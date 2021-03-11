@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <!--<link href="static/style.css" rel="stylesheet">-->
+    </head>
+    <body>
+        
+            <div class='cont'>
+                
+            
+            {% if data == 0 %}
+            <h1>Covid 19 effected</h1>
+            
+            {%else%}
+            <h1> Covid 19 not effected </h1>
+            
+            {%endif%}
+
+        </div>
+            
+            
+            <img src="{{url_for('load_img')}}" alt='img'>
+            <a href="/" class='btn'>go back</a>
+
+      
+        
+    </body>
+</html>
